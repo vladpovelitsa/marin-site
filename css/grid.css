@@ -1,0 +1,46 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+}
+.grid-child {
+    border: 2px solid red;
+    padding: 30px;
+}
+.grid-child:nth-child(1) {
+    background: green;
+    grid-row: 1 / 4;
+
+}
+.grid-child:nth-child(2) {
+    background: green;
+    grid-column: 2 / 4;
+
+}
+.grid-child:nth-child(3) {
+    background: tomato;
+}
+.grid-child:nth-child(4) {
+    background: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+}
+.grid-child:nth-child(5) {
+    background: tomato;
+
+}
+.grid-child:nth-child(6) {
+    background: green;
+
+}
+.grid-child:nth-child(7) {
+    background: tomato;
+}
+.grid-child:nth-child(8) {
+    background: darkgoldenrod;
+}
