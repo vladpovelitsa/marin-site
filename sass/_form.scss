@@ -30,17 +30,12 @@
         right: 20px;
         pointer-events: none;
       }
-
       &:focus-within {
          &:before {
            transform: scale(1,-1);
-
          }
        }
-
     }
-
-
   }
 
   &__checkbox {

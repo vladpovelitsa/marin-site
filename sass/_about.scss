@@ -13,6 +13,11 @@
   &__img {
     grid-row: 1 / 4;
     grid-column: 2 / 3;
+    @media screen and (max-width: 1200px) {
+      grid-column: unset;
+      grid-row: 2 / 3;
+
+    }
   }
   &__title,
   &__desc {
@@ -27,5 +32,12 @@
   &__btns {
     display: flex;
     gap: 30px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
   }
 }
